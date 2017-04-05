@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Kacper Pikulski - portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        font-family:Arial;
+        letter-spacing: 1.3px;
+    }
+    .bg-1{
+        background-color: #cc4b37;/*#1abc9c*/
+        color: #ffffff;
+        padding:20px;
+    }
+    .bg-2{
+        background-color:#1abc9c;/*#474e5d*/
+        color:#ffffff;
+        padding:40px;
+    }
+    .bg-3{
+        /*background-color:#2fa8e0;*/
+        color: #474e5d;
+        padding:40px;
+    }
+    .bg-3 i{
+        font-size:15px;
+        letter-spacing: 1px;
+        }
+    .bg-4{
+        background-color: #cc4b37; /* #cc4b37 */
+        color: white;
+        padding:40px;
+    }
+    .col-contact{
+       
+    }
+    .col-contact p{
+        font-size:20px;
+    }
+    .bg-6{
+        background-color:#1abc9c;/*#1abc9c*/
+    }
+    .bg-6 p{
+        padding-top:4px;
+        color:white;
+    }
+    .img-project{
+        border:12px solid #cc4b37;/*#2fa8e0*/
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid bg-1 text-center">
+<img src="{% static "me.jpg"%}" alt="Ja" class="img-circle">
+<h2>Kacper Pikulski</h2>    
+</div>
+<div class="container-fluid bg-2 text-center">
+  <h3>Kim jestem?</h3>
+  <p>Jestem programisto, mam 17 lat i chodze do konopa. Lubie siedziec i rozwiazywac problemy.</p>
+</div>
+<div class="container-fluid bg-3 text-center">
+  <h3>Co aktualnie robie?</h3>
+  </br>
+  <div class="row">
+    <div class="col-sm-4 col-projects">
+      <img src="{% static "projekt1.jpg"%}" width="170px" height="170px" alt="Diody" class="img-circle img-project"></br></br>
+      <i>Diody</i>
+    </div>
+    <div class="col-sm-4 col-projects"> 
+      <img src="{% static "projekt2.jpg"%}" width="170px" height="170px"alt="Diody" class="img-circle img-project"></br></br>
+      <i>Robot - "Kurwia"</i>
+    </div>
+    <div class="col-sm-4 col-projects">
+      <img src="{% static "bitcoin1.jpg"%}" width="170px" height="170px"alt="Diody" class="img-circle img-project"></br></br>
+      <i>Bitcoin - koparka</i>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-4 text-center">
+  <h3>Jak mozesz sie ze mna skontaktowac ?</h3>
+  <div class="row">
+    <div class="col-sm-4 col-contact">
+      <p>Telefon</p>
+      <i>999-999-999</i>
+    </div>
+    <div class="col-sm-4 col-contact"> 
+      <p>E-mail</p>
+      <i>test@test.com</i>
+    </div>
+    <div class="col-sm-4 col-contact">
+      <p>Facebook</p>
+      <!--<a href="https://www.facebook.pl/galileopolska">facebook.com/galileopolska</a>-->
+      <i>Fejsbuk/Góglplus</i>
+    </div>
+  </div>
+</div>
+<!--{%for post in posts%}
+<h2>{{post.title}}</h2>
+<p>{{post.text}}</p>
+{%endfor%}-->
+<div class="container-fluid footer bg-6 text-center">
+  <p>Kacper Pikulski&copy; 2015</p>
+</div>
+</body>
+</html>

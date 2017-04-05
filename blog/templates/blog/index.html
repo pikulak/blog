@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Kacper Pikulski - portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        font-family:Arial;
+        letter-spacing: 1.3px;
+    }
+    .bg-1{
+        background-color: #424242;/*#cc4b37 #3299BB*/
+        color: #ffffff;
+        padding:20px;
+    }
+    .bg-2{
+        background-color:#3299BB;/*#474e5d  1abc9c 0AA78B #424242*/
+        color:#ffffff;
+        padding:40px;
+    }
+    .bg-3{
+        /*background-color:#2fa8e0;*/
+        background-color:#E9E9E9;
+        color: #474e5d;
+        padding:40px;
+    }
+    .bg-3 i{
+        font-size:15px;
+        letter-spacing: 1px;
+        }
+    .bg-4{
+        background-color: #3299BB; /* #cc4b37 */
+        color: white;
+        padding:40px;
+        height:220px;
+    }
+    .col-contact{
+       
+    }
+    .col-contact p{
+        font-size:20px;
+    }
+    .bg-6{
+        background-color:#424242;/*#1abc9c*/
+    }
+    .bg-6 p{
+        padding-top:4px;
+        color:white;
+    }
+    .img-project{
+        padding:1px;
+        border:12px solid #3299BB;/*#cc4b37*/
+    }
+    .img-logo{
+        padding: 10px;
+        border:12px solid #E9E9E9
+    }
+    .footer{
+        position:absolute;
+        bottom:0;
+        width:100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid bg-1 text-center">
+<a href="/pikulski"><img src="{% static "me.jpg"%}" alt="Ja" class="img-circle img-logo" width=250 height=250></a>
+<h2>Kacper Pikulski</h2>    
+</div>
+<div class="container-fluid bg-2 text-center">
+  <h3>Kim jestem?</h3>
+  <p>Jestem programisto, mam 17 lat i chodzę do konopa. Lubię siedzieć i rozwiązywać problemy.</p>
+</div>
+<div class="container-fluid bg-3 text-center">
+  <h3>Ostatnio aktualizowane projekty</h3>
+  </br>
+  <div class="row">
+  {%for projekt in projekty%}
+    <div class="col-sm-4 col-projects">
+      <a href="/projekt/{{projekt.id}}"><img src="{{projekt.image_url.url}}" width="170px" height="170px" alt="Diody" class="img-circle img-project"></a></br></br>
+      <i>{{projekt.title}}</i>
+      </div>
+    {%endfor%}
+  </div>
+</div>
+<div class="container-fluid bg-4 text-center">
+  <h3>Jak możesz się ze mną skontaktować?</h3>
+  <div class="row">
+    <div class="col-sm-4 col-contact">
+      <p>Telefon</p>
+      <i>999-999-999</i>
+    </div>
+    <div class="col-sm-4 col-contact"> 
+      <p>E-mail</p>
+      <i>test@test.com</i>
+    </div>
+    <div class="col-sm-4 col-contact">
+      <p>Facebook</p>
+      <!--<a href="https://www.facebook.pl/galileopolska">facebook.com/galileopolska</a>-->
+      <i>Fejsbuk/Góglplus</i>
+    </div>
+  </div>
+</div>
+<div class="container-fluid footer bg-6 text-center">
+  <p>Kacper Pikulski&copy; 2015</p>
+</div>
+</body>
+</html>

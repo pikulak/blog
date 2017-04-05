@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Kacper Pikulski - portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        font-family:Arial;
+        letter-spacing: 1.3px;
+    }
+    .bg-1{
+        background-color: #424242;/*#cc4b37 #3299BB*/
+        color: #ffffff;
+        padding:20px;
+    }
+    .bg-2{
+        background-color:#3299BB;/*#474e5d  1abc9c 0AA78B #424242*/
+        color:#ffffff;
+        padding:40px;
+    }
+    .bg-3{
+        /*background-color:#2fa8e0;*/
+        background-color:#E9E9E9;
+        color: #474e5d;
+        padding:40px;
+    }
+    .bg-4{
+        background-color: #3299BB; /* #cc4b37 */
+        color: white;
+        padding:40px;
+    }
+    .col-contact{
+       
+    }
+    .col-contact p{
+        font-size:20px;
+    }
+    .bg-6{
+        background-color:#424242;/*#1abc9c*/
+    }
+    .bg-6 p{
+        padding-top:4px;
+        color:white;
+    }
+    .img-logo{
+        padding: 10px;
+        border:12px solid #E9E9E9
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid bg-1 text-center">
+<a href="/pikulski"><img src="{% static "me.jpg"%}" alt="Ja" class="img-circle img-logo" width=250 height=250></a>
+<h2>Kacper Pikulski</h2>    
+</div>
+<div class="container-fluid bg-2 text-center">
+  <h3>Kim jestem?</h3>
+  <p>Jestem programisto, mam 17 lat i chodzę do konopa. Lubię siedzieć i rozwiązywać problemy.</p>
+</div>
+<div class="container-fluid bg-3 text-center">
+  <h3>Something about me</h3>
+  <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat eu dolor eu bibendum. Aenean viverra metus in libero laoreet, eu feugiat risus lacinia. Suspendisse at consectetur augue, non tempus mauris. Integer ac aliquet leo. Nam sollicitudin commodo ligula, ac elementum tellus suscipit quis. Etiam id quam mattis, semper urna sed, finibus odio. Phasellus sodales vel purus id iaculis. Nullam eget lacus lacinia, consectetur magna in, tristique tortor. Quisque posuere eros finibus odio tincidunt, vel facilisis metus consectetur. Pellentesque eget felis arcu. Nullam turpis sapien, pretium vitae mi sed, euismod lacinia ante. Aenean a viverra urna. Aliquam quam felis, elementum ut venenatis eleifend, cursus quis augue.
+
+Quisque ac nisi in leo volutpat tincidunt scelerisque sed elit. Sed ornare vestibulum nibh non sagittis. Curabitur posuere, sapien sed interdum congue, enim lectus vehicula eros, quis aliquet justo mauris sit amet massa. Vestibulum ac magna erat. Maecenas ullamcorper mollis dignissim. Maecenas ac tempor magna, in fringilla elit. Praesent sagittis felis libero, vel tristique dolor hendrerit quis. Nam non massa a quam ultricies luctus at non leo. Sed accumsan mollis luctus. Nunc sed hendrerit nibh, lobortis aliquet orci. Praesent maximus arcu vel dapibus imperdiet. Aliquam sem orci, semper eget suscipit sit amet, tincidunt eget turpis. Integer vehicula, sapien ac elementum euismod, turpis eros placerat dui, nec volutpat felis mauris vitae urna. Duis suscipit tempus sem in pretium. Vestibulum hendrerit vehicula nibh. Suspendisse auctor mattis tempus.
+
+Aliquam erat volutpat. Curabitur tempor pretium rutrum. Nam venenatis molestie nisi sit amet fermentum. Vivamus auctor justo commodo dictum venenatis. Donec fringilla nisi sed nisi tincidunt laoreet. Sed eu magna ante. Nulla vitae odio sit amet arcu pellentesque pretium ac vitae nunc.
+
+Donec ac metus diam. Curabitur facilisis lacus at fringilla convallis. Sed lacinia consectetur erat. In fermentum interdum orci nec bibendum. Morbi elementum efficitur lorem eget fringilla. Sed ac laoreet enim, nec ornare nibh. Vestibulum metus elit, laoreet in tempus quis, maximus ac diam. Phasellus vehicula lectus risus, in consectetur justo consequat a. Nunc ut arcu urna. Fusce ultricies sodales leo, in bibendum risus. Ut eget eros auctor, pharetra felis et, vehicula est.
+
+Phasellus urna velit, bibendum at condimentum condimentum, tempor non eros. Curabitur rutrum risus vestibulum pellentesque varius. Quisque vestibulum porta nisl id molestie. Integer lobortis tellus et ipsum egestas, sed fermentum dui condimentum. Suspendisse vitae ex cursus, hendrerit diam a, scelerisque felis. Sed bibendum, elit a scelerisque porta, odio est ultrices justo, et posuere nisl eros vel ex. Duis sodales magna ligula, ut feugiat eros laoreet sit amet. Vivamus ut turpis nec arcu tempus finibus vitae in ipsum. Fusce venenatis laoreet metus non molestie. Vestibulum ac lectus pulvinar diam sollicitudin iaculis. Nullam dignissim pretium consectetur. Integer at nunc mattis, laoreet enim sed, mollis mauris. Vivamus vel lorem orci. Proin rhoncus non orci eget aliquam.
+</p>
+</div>
+<div class="container-fluid bg-4 text-center">
+  <h3>Jak możesz się ze mną skontaktować ?</h3>
+  <div class="row">
+    <div class="col-sm-4 col-contact">
+      <p>Telefon</p>
+      <i>999-999-999</i>
+    </div>
+    <div class="col-sm-4 col-contact"> 
+      <p>E-mail</p>
+      <i>test@test.com</i>
+    </div>
+    <div class="col-sm-4 col-contact">
+      <p>Facebook</p>
+      <!--<a href="https://www.facebook.pl/galileopolska">facebook.com/galileopolska</a>-->
+      <i>Fejsbuk/Góglplus</i>
+    </div>
+  </div>
+</div>
+<div class="container-fluid footer bg-6 text-center">
+  <p>Kacper Pikulski&copy; 2015</p>
+</div>
+</body>
+</html>
